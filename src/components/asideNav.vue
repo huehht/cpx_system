@@ -11,9 +11,9 @@
                             <span>已有模型一</span>
                         </template>
                         <el-menu-item-group>
-                            <el-menu-item index="1">产品运行模型</el-menu-item>
-                            <el-menu-item index="2">接入仿真模型</el-menu-item>
-                            <el-menu-item index="3">完成实物链接装配</el-menu-item>
+                            <el-menu-item index="/p1">产品运行模型</el-menu-item>
+                            <el-menu-item index="/p2">接入仿真模型</el-menu-item>
+                            <el-menu-item index="/p3">完成实物链接装配</el-menu-item>
                         </el-menu-item-group>
                         <el-submenu index="1-4">
                             <template slot="title">导出模板</template>
