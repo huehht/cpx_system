@@ -1,7 +1,7 @@
 <template>
     <el-row class="menu_page">
         <el-col>
-            <el-menu class="el-menu-vertical-demo" background-color="#324057" text-color="#fff" active-text-color="#409eff">
+            <el-menu class="el-menu-vertical-demo">
                 <router-link to="/home">
                     <el-menu-item index="0">
                         <i class="fa fa-margin fa-server"></i>

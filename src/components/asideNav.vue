@@ -3,7 +3,7 @@
         <el-row class="tac" style="height: 100%; width: 100%;">
             <el-col :span="12" style="height: 100%; width: 100%;">
                 <el-menu default-active="this.$route.path" router class="el-menu-vertical-demo" @open="handleOpen"
-                    @close="handleClose" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b"
+                    @close="handleClose" 
                     style="height: 100%; width: 100%;">
                     <el-submenu index="/pagesOne">
                         <template slot="title">
@@ -11,9 +11,9 @@
                             <span>已有模型一</span>
                         </template>
                         <el-menu-item-group>
-                            <el-menu-item index="/">产品运行模型</el-menu-item>
-                            <el-menu-item index="/">接入仿真模型</el-menu-item>
-                            <el-menu-item index="/">完成实物链接装配</el-menu-item>
+                            <el-menu-item index="1">产品运行模型</el-menu-item>
+                            <el-menu-item index="2">接入仿真模型</el-menu-item>
+                            <el-menu-item index="3">完成实物链接装配</el-menu-item>
                         </el-menu-item-group>
                         <el-submenu index="1-4">
                             <template slot="title">导出模板</template>
@@ -32,7 +32,7 @@
                         <i class="el-icon-setting"></i>
                         <span slot="title">已有模型四</span>
                     </el-menu-item>
-                    <el-menu-item index="/pagesTwo">
+                    <el-menu-item index="4">
                         <i class="el-icon-setting"></i>
                         <span slot="title">已有模型五</span>
                     </el-menu-item>
@@ -55,3 +55,6 @@ export default {
     }
 }
 </script>
+<style>
+
+</style>
