@@ -13,9 +13,9 @@
             <el-form-item label="接口规则设置" prop="implementRule" style="width: 90%">
                 <el-input v-model="form.implementRule"></el-input>
             </el-form-item>
-            <el-form-item label="图标选择" prop="iconChose" style="width: 90%">
+            <!-- <el-form-item label="图标选择" prop="iconChose" style="width: 90%">
                 <el-input v-model="form.iconChose"></el-input>
-            </el-form-item>
+            </el-form-item> -->
         </el-form>
         <span slot="footer" class="dialog-footer">
             <el-button @click="sureData" type="primary">添 加</el-button>
@@ -45,26 +45,16 @@ export default {
     data() {
         return {
             rules: {
-                workAddress: [{ required: true, message: "请输入标题", trigger: "blur" },],
-                workContent: [{ required: true, message: "请输入正文内容", trigger: "blur" },],
-                remark: [{ required: true, message: "请选择台账类型", trigger: "blur" }],
-            },
+                },
             visible: false,
             title: "新增",
             form: {
-                baseFile: undefined,
-                workAddress: "",
-                workContent: "",
-                longitude: "",
-                latitude: "",
+                modelName: "",
+                modelInNum: 0,
+                modelOutNum: "",
+                implementRule: "",
             },
             myOptions: [],
-            defaultprops: {
-                checkStrictly: true, //任意一级
-                children: "children",
-                label: "name",
-                value: "code",
-            },
         };
     },
     methods: {
@@ -81,55 +71,8 @@ export default {
             this.visible = true;
         },
         /**
-         * 点击 事发地点 定位时
-         */
-        async handleClickIncidentAddress() {
-            try {
-                const res = await geturl();
-                window.setData = (data) => {
-                    this.form.unifiedAddressName = data.addr;
-                    this.form.longitude = data.lon; // '经度'
-                    this.form.latitude = data.lat; // '纬度'
-                    this.form.unifiedAddressId = data.code;
-                    window.setData = void 0;
-                };
-                this.$windowOpen(
-                    getAddressUrl({
-                        ...res.data,
-                        option: "addr",
-                    })
-                );
-            } catch (e) {
-                console.error(e);
-                this.$message.error(e.message);
-            }
-        },
-        /**
          * 点击 关联信息-地址 定位时
          */
-        async handleClickRelationAddress() {
-            try {
-                const res = await geturl();
-
-                window.setRelationData = (data) => {
-                    this.form.relationaddr = "";
-                    this.form.relationuaddrid = data.code;
-                    this.form.relationuaddrname = data.addr;
-                    window.setRelationData = void 0;
-                    window.setData = void 0;
-                };
-                window.setData = window.setRelationData;
-                this.$windowOpen(
-                    getAddressUrl({
-                        ...res.data,
-                        option: "relation",
-                    })
-                );
-            } catch (e) {
-                console.error(e);
-                this.$message.error(e.message);
-            }
-        },
         async sureData() {
             this.$refs.form.validate()
             let options = {
@@ -157,13 +100,11 @@ export default {
         },
         close() {
             this.visible = false;
-            this.form = {
-                baseFile: "",
-                workAddress: "",
-                workContent: "",
-                longitude: "",
-                latitude: "",
-                remark: "",
+            this.form= {
+                modelName: "",
+                modelInNum: 0,
+                modelOutNum: "",
+                implementRule: "",
             };
         },
     },

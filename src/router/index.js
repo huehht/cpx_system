@@ -8,18 +8,19 @@ import pagesTwo from '../components/pagesTwo'
 import p1 from '../components/p1'
 import p2 from '../components/p2'
 import p3 from '../components/p3'
+import view from '../views/index'
 
 export default new Router({
   routes: [
     {
       path: '/',
       name: 'p1',
-      component: p1
+      component: view
     },
     {
       path: '/p1',
       name: 'p1',
-      component: p1
+      component: view
     },
     {
       path: '/p2',
