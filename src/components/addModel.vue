@@ -1,6 +1,6 @@
 <template>
     <el-dialog :title="title" :visible.sync="visible" width="1000px" @close="close">
-        <el-form slot="default" :rules="rules" ref="form" :model="form" label-width="100px">
+        <el-form slot="default"  ref="form" :model="form" label-width="100px">
             <el-form-item label="模块名称" prop="modelName" style="width: 90%">
                 <el-input v-model="form.modelName"></el-input>
             </el-form-item>
@@ -27,25 +27,14 @@
 // import { update, getGridView, add, getTypeIndex } from "@/api/offer/Conference.js";
 
 export default {
-    created() {
-        this.getTypeIndexFn()
-    },
-    components: {
-    },
-    props: {
-        type: {
-            type: String,
-            default: "2",
-        },
-        pid: {
-            type: String,
-            default: "",
-        }
-    },
+    // created() {
+    //     this.getTypeIndexFn()
+    // },
+    components: {},
+    props: {},
     data() {
         return {
-            rules: {
-                },
+            rules: {},
             visible: false,
             title: "新增",
             form: {
@@ -58,46 +47,46 @@ export default {
         };
     },
     methods: {
-        async getTypeIndexFn() {
-            try {
-                const res = await getTypeIndex({ conttentType: 2 })
-                this.myOptions = res.data.children
+        // async getTypeIndexFn() {
+        //     try {
+        //         const res = await getTypeIndex({ conttentType: 2 })
+        //         this.myOptions = res.data.children
 
-            } catch (error) {
-                console.error(error);
-            }
-        },
+        //     } catch (error) {
+        //         console.error(error);
+        //     }
+        // },
         async init() {
             this.visible = true;
         },
         /**
          * 点击 关联信息-地址 定位时
          */
-        async sureData() {
-            this.$refs.form.validate()
-            let options = {
-                remark: this.form.remark[this.form.remark.length - 1],//	台账类型编码
-                typemodule: this.type,//2-专题 1-网格
-                pid: this.pid,//组织编码id
-                longitude: this.form.longitude,//	经度
-                latitude: this.form.latitude,//纬度
-                attachments: this.form.baseFile === undefined ? "" : JSON.stringify(this.form.baseFile.map((e) => e.basefile)),//附件
-                workAddress: this.form.workAddress,//标题
-                workContent: this.form.workContent,//	正文内容
-            };
-            this.$refs.form.validate(async (valid) => {
-                if (valid) {
-                    try {
-                        let data = await add(options);
-                        if (data.code == 200) {
-                            this.$emit("update");
-                            this.close();
-                            this.$message.success("添加成功");
-                        }
-                    } catch (error) { }
-                }
-            });
-        },
+        // async sureData() {
+        //     this.$refs.form.validate()
+        //     let options = {
+        //         remark: this.form.remark[this.form.remark.length - 1],//	台账类型编码
+        //         typemodule: this.type,//2-专题 1-网格
+        //         pid: this.pid,//组织编码id
+        //         longitude: this.form.longitude,//	经度
+        //         latitude: this.form.latitude,//纬度
+        //         attachments: this.form.baseFile === undefined ? "" : JSON.stringify(this.form.baseFile.map((e) => e.basefile)),//附件
+        //         workAddress: this.form.workAddress,//标题
+        //         workContent: this.form.workContent,//	正文内容
+        //     };
+        //     this.$refs.form.validate(async (valid) => {
+        //         if (valid) {
+        //             try {
+        //                 let data = await add(options);
+        //                 if (data.code == 200) {
+        //                     this.$emit("update");
+        //                     this.close();
+        //                     this.$message.success("添加成功");
+        //                 }
+        //             } catch (error) { }
+        //         }
+        //     });
+        // },
         close() {
             this.visible = false;
             this.form= {

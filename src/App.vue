@@ -12,16 +12,21 @@
         <asideNav></asideNav>
       </el-aside>
       <!-- 主页面 -->
+      
       <el-main>
-        <router-view></router-view>
+        <!-- <AddModel></AddModel> -->
+        <!-- <router-view></router-view> -->
+        <msgBox></msgBox>
       </el-main>
     </el-container>
   </div>
 </template>
  
 <script>
-import myHeader from "@/components/myHeader"
-import asideNav from "@/components/asideNav"
+import myHeader from "@/components/myHeader";
+import asideNav from "@/components/asideNav";
+// import AddModel from "@/components/addModel";
+import msgBox from "./components/msgDet";
 
 
 
@@ -30,7 +35,9 @@ export default {
   components: {
     myHeader,
     asideNav,
-  }
+    msgBox,
+    // AddModel,
+}
 }
 </script>
 
