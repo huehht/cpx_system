@@ -15,10 +15,10 @@
         </div>
         <div>
             <el-button icon="el-icon-plus" @click="openWindow" size="mini">添加</el-button>
-            <el-dialog title="新增模块" :visible.sync="windowVisible" append-to-body>
+            <el-dialog title="模块编辑" :visible.sync="windowVisible" append-to-body>
                 <ActivityWindow v-if="windowVisible" ref="popWindow"></ActivityWindow>
                 <span slot="footer" class="dialog-footer">
-                    <el-button type="primary" @click="onSubmit">提交</el-button>
+                    <el-button type="primary" @click="onSubmit">确认</el-button>
                     <el-button @click="windowVisible = false">取消</el-button>
                 </span>
             </el-dialog>

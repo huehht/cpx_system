@@ -16,7 +16,8 @@
       <el-main>
         <!-- <AddModel></AddModel> -->
         <!-- <router-view></router-view> -->
-        <msgBox></msgBox>
+        <!-- <msgBox></msgBox> -->
+
       </el-main>
     </el-container>
   </div>
