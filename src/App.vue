@@ -16,7 +16,7 @@
       <el-main>
         <!-- <AddModel></AddModel> -->
         <!-- <router-view></router-view> -->
-        <!-- <msgBox></msgBox> -->
+        <msgBox></msgBox>
 
       </el-main>
     </el-container>
@@ -27,7 +27,8 @@
 import myHeader from "@/components/myHeader";
 import asideNav from "@/components/asideNav";
 // import AddModel from "@/components/addModel";
-import msgBox from "./components/msgDet";
+// import msgBox from "./components/msgDet";
+import msgBox from "./components/p1";
 
 
 

@@ -8,10 +8,10 @@
                     <el-submenu index="/pagesOne">
                         <template slot="title">
                             <i class="el-icon-location"></i>
-                            <span>已有模型一</span>
+                            <span>汽车运行模型</span>
                         </template>
                         <el-menu-item-group>
-                            <el-menu-item index="/p1">产品运行模型</el-menu-item>
+                            <el-menu-item index="/p1">设计运行模型</el-menu-item>
                             <el-menu-item index="/p2">接入仿真模型</el-menu-item>
                             <el-menu-item index="/p3">完成实物链接装配</el-menu-item>
                         </el-menu-item-group>
@@ -22,19 +22,15 @@
                     </el-submenu>
                     <el-menu-item index="">
                         <i class="el-icon-menu"></i>
-                        <span slot="title">已有模型二</span>
+                        <span slot="title">飞机设计模型</span>
                     </el-menu-item>
                     <el-menu-item index="/pagesOne">
                         <i class="el-icon-document"></i>
-                        <span slot="title">已有模型三</span>
+                        <span slot="title">无人机模型</span>
                     </el-menu-item>
                     <el-menu-item index="/pagesTwo">
                         <i class="el-icon-setting"></i>
-                        <span slot="title">已有模型四</span>
-                    </el-menu-item>
-                    <el-menu-item index="4">
-                        <i class="el-icon-setting"></i>
-                        <span slot="title">已有模型五</span>
+                        <span slot="title">新能源汽车模型</span>
                     </el-menu-item>
                 </el-menu>
             </el-col>
