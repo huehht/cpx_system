@@ -8,17 +8,15 @@
                     <el-submenu index="/pagesOne">
                         <template slot="title">
                             <i class="el-icon-location"></i>
-                            <span>汽车运行模型</span>
+                            <span>汽车设计模型</span>
                         </template>
                         <el-menu-item-group>
-                            <el-menu-item index="/p1">设计运行模型</el-menu-item>
-                            <el-menu-item index="/p2">接入仿真模型</el-menu-item>
-                            <el-menu-item index="/p3">完成实物链接装配</el-menu-item>
+                            <el-menu-item icon="el-icon-devops-menu-ctrller" index="/p1">仪表盘</el-menu-item>
+                            <el-menu-item icon="el-icon-devops-engine" index="/p2">发动机</el-menu-item>
+                            <el-menu-item icon="el-icon-devops-transmission" index="/p3">变速器</el-menu-item>
+                            <el-menu-item icon="el-icon-devops-fuel" index="/p4">油箱</el-menu-item>
+                            <el-menu-item icon="el-icon-devops-wheel" index="/p5">车轮</el-menu-item>
                         </el-menu-item-group>
-                        <el-submenu index="1-4">
-                            <template slot="title">导出模板</template>
-                            <el-menu-item index="1-4-1">模块接口实现</el-menu-item>
-                        </el-submenu>
                     </el-submenu>
                     <el-menu-item index="">
                         <i class="el-icon-menu"></i>
@@ -26,11 +24,7 @@
                     </el-menu-item>
                     <el-menu-item index="/pagesOne">
                         <i class="el-icon-document"></i>
-                        <span slot="title">无人机模型</span>
-                    </el-menu-item>
-                    <el-menu-item index="/pagesTwo">
-                        <i class="el-icon-setting"></i>
-                        <span slot="title">新能源汽车模型</span>
+                        <span slot="title">火箭设计模型</span>
                     </el-menu-item>
                 </el-menu>
             </el-col>

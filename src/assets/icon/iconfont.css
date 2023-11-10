@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4318314 */
+  src: url('iconfont.woff2?t=1699282830593') format('woff2'),
+       url('iconfont.woff?t=1699282830593') format('woff'),
+       url('iconfont.ttf?t=1699282830593') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="el-icon-devops"],[class*=" el-icon-devops"] {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+.el-icon-devops-engine:before {
+  content: "\e617";
+}
+
+.el-icon-devops-interface:before {
+  content: "\e66a";
+}
+
+.el-icon-devops-modular:before {
+  content: "\e66d";
+}
+
+.el-icon-devops-wheel:before {
+  content: "\e60d";
+}
+
+.el-icon-devops-fuel:before {
+  content: "\e60f";
+}
+
+.el-icon-devops-controller:before {
+  content: "\e651";
+}
+
+.el-icon-devops-menu-ctrller:before {
+  content: "\e74f";
+}
+
+.el-icon-devops-transmission:before {
+  content: "\e65a";
+}
+

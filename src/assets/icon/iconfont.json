@@ -1,0 +1,65 @@
+{
+  "id": "4318314",
+  "name": "el-icon-devops",
+  "font_family": "iconfont",
+  "css_prefix_text": "el-icon-devops",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2532953",
+      "name": "发动机灯",
+      "font_class": "-engine",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "9454024",
+      "name": "接口",
+      "font_class": "-interface",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "11891792",
+      "name": "modular",
+      "font_class": "-modular",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "12137659",
+      "name": "车轮",
+      "font_class": "-wheel",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "12795059",
+      "name": "油耗",
+      "font_class": "-fuel",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "12975229",
+      "name": "控制台",
+      "font_class": "-controller",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "14349682",
+      "name": "menu_控制台",
+      "font_class": "-menu-ctrller",
+      "unicode": "e74f",
+      "unicode_decimal": 59215
+    },
+    {
+      "icon_id": "27935093",
+      "name": "变速箱",
+      "font_class": "-transmission",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    }
+  ]
+}

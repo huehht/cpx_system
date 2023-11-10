@@ -1,7 +1,7 @@
 <template>
     <div class="aside" style="height: 100%; width: 100%;">
         <el-row class="tac" style="height: 100%; width: 100%;">
-            <el-col :span="12" style="height: 100%; width: 100%;">
+            <el-col :span="12" :offset="4" style="height: 100%; width: 100%;">
                 <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" >
       <el-menu-item index="1">新建产品</el-menu-item>
       <el-submenu index="2">
@@ -18,8 +18,9 @@
       </el-submenu>
       <el-menu-item index="3">导出产品模型并保存</el-menu-item>
       <el-menu-item index="4">导入本地模型</el-menu-item>
-      <el-menu-item index="5">编译</el-menu-item>
+      <el-menu-item index="5">模型发布</el-menu-item>
       <el-menu-item index="6">链接并导出运行系统</el-menu-item>
+      <el-menu-item index="7">结果数据分析</el-menu-item>
     </el-menu>
             </el-col>
         </el-row>
